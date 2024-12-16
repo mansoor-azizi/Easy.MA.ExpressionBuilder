@@ -1,2 +1,2 @@
 # Easy.MA.ExpressionBuilder
-.NET Easy Expression Builder by Mansoor Azizi
+.NET 8 Easy Expression Builder by Mansoor Azizi
