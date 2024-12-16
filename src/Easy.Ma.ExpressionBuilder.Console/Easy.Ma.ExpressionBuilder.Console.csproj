@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Easy.MA.PredicateBuilder.SampleClass\Easy.MA.ExpressionBuilder.Models.csproj" />
-    <ProjectReference Include="..\Easy.MA.PredicateBuilder\Easy.MA.ExpressionBuilder.csproj" />
+    <ProjectReference Include="..\Easy.MA.ExpressionBuilder.Models\Easy.MA.ExpressionBuilder.Models.csproj" />
+    <ProjectReference Include="..\Easy.MA.ExpressionBuilder\Easy.MA.ExpressionBuilder.csproj" />
   </ItemGroup>
 
 </Project>
