@@ -10,9 +10,9 @@ namespace Easy.MA.ExpressionBuilder.Core
     {
         public required string PropertyName { get; set; }
 
-        public required object FilterValue { get; set; }
+        public required string FilterValue { get; set; }
 
-        public object FilterOtherValue { get; set; }
+        public string FilterOtherValue { get; set; }
 
         public FilterCondition Operator { get; set; } = FilterCondition.Equals;
     }

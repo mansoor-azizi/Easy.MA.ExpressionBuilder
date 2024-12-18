@@ -3,6 +3,7 @@ using Easy.MA.ExpressionBuilder;
 using Easy.MA.ExpressionBuilder.Core;
 using Easy.MA.ExpressionBuilder.Models;
 using System;
+using System.Text.Json;
 
 Console.WriteLine("This is a Predicate Bulider App by Mansoor Azizi");
 
