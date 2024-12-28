@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.Ma.ExpressionBuilder.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.MA.ExpressionBuilder.Test", "Easy.MA.ExpressionBuilder.Test\Easy.MA.ExpressionBuilder.Test.csproj", "{E960D95F-ACB5-447F-9EC9-CDF2ED222347}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.MA.ExpressionBuilder", "Easy.MA.ExpressionBuilder\Easy.MA.ExpressionBuilder.csproj", "{DB13AACD-3F2F-4B7B-A357-D66E6BAD0621}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.MA.ExpressionBuilder.Models", "Easy.MA.ExpressionBuilder.Models\Easy.MA.ExpressionBuilder.Models.csproj", "{C886FE65-ECFC-420F-96B4-5A43B7573765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy.Ma.ExpressionBuilder.WebApi", "Easy.Ma.ExpressionBuilder.WebApi\Easy.Ma.ExpressionBuilder.WebApi.csproj", "{B5A3F947-5670-40F7-BDD3-AF9F0DCE3DB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.Ma.ExpressionBuilder.WebApi", "Easy.Ma.ExpressionBuilder.WebApi\Easy.Ma.ExpressionBuilder.WebApi.csproj", "{B5A3F947-5670-40F7-BDD3-AF9F0DCE3DB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.MA.ExpressionBuilder", "Easy.MA.ExpressionBuilder\Easy.MA.ExpressionBuilder.csproj", "{B1E8DC90-D620-4905-B833-E207C57B5FF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		{E960D95F-ACB5-447F-9EC9-CDF2ED222347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E960D95F-ACB5-447F-9EC9-CDF2ED222347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E960D95F-ACB5-447F-9EC9-CDF2ED222347}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB13AACD-3F2F-4B7B-A357-D66E6BAD0621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB13AACD-3F2F-4B7B-A357-D66E6BAD0621}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB13AACD-3F2F-4B7B-A357-D66E6BAD0621}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB13AACD-3F2F-4B7B-A357-D66E6BAD0621}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C886FE65-ECFC-420F-96B4-5A43B7573765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C886FE65-ECFC-420F-96B4-5A43B7573765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C886FE65-ECFC-420F-96B4-5A43B7573765}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{B5A3F947-5670-40F7-BDD3-AF9F0DCE3DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5A3F947-5670-40F7-BDD3-AF9F0DCE3DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5A3F947-5670-40F7-BDD3-AF9F0DCE3DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E8DC90-D620-4905-B833-E207C57B5FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E8DC90-D620-4905-B833-E207C57B5FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E8DC90-D620-4905-B833-E207C57B5FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E8DC90-D620-4905-B833-E207C57B5FF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
