@@ -1,7 +1,7 @@
 
 # Dynamic Expression Builder
 
-.NET 8 Easy Expression Builder by Mansoor Azizi
+.NET 8 Easy Expression Builder by Mansoor Azizi.
 A generic dynamic expression builder that works with any type of class.
 
 ## Features
