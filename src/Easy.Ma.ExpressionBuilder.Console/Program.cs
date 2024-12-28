@@ -16,14 +16,14 @@ filters.Add(new Filter()
 {
     PropertyName = "Car.ModelName",
     FilterValue = "HONDA",
-    Operator = FilterCondition.Equals,
+    Operator = "Equals",
 
 });
 filters.Add(new Filter()
 {
     PropertyName = "Name",
     FilterValue = "Michael",
-    Operator = FilterCondition.Equals,
+    Operator = "Equals",
 
 });
 

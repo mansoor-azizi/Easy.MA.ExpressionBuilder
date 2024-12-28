@@ -24,7 +24,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "DateOfBirth",
                     FilterValue = "1985-05-01",
-                    Operator = FilterCondition.Equals,
+                    Operator = "Equals",
                 }
             };
 
@@ -51,7 +51,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "DateOfBirth",
                     FilterValue = "1985-05-01",
-                    Operator = FilterCondition.NotEquals,
+                    Operator ="NotEquals",
                 }
             };
 
@@ -78,7 +78,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "DateOfBirth",
                     FilterValue = "1985-05-01",
-                    Operator = FilterCondition.GreaterThan,
+                    Operator = "GreaterThan",
                 }
             };
 
@@ -105,7 +105,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "DateOfBirth",
                     FilterValue = "1985-05-01",
-                    Operator = FilterCondition.LessThan,
+                    Operator = "LessThan",
                 }
             };
 
@@ -132,7 +132,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "DateOfBirth",
                     FilterValue = "1985-05-01",
-                    Operator = FilterCondition.GreaterThanOrEqual,
+                    Operator = "GreaterThanOrEqual",
                 }
             };
 
@@ -159,7 +159,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "DateOfBirth",
                     FilterValue = "1985-05-01",
-                    Operator = FilterCondition.LessThanOrEqual,
+                    Operator = "LessThanOrEqual",
                 }
             };
 
@@ -187,7 +187,7 @@ namespace expressionBuilderTests
                     PropertyName = "DateOfBirth",
                     FilterValue = "1985-05-01",
                     FilterOtherValue = "1990-07-15",
-                    Operator = FilterCondition.InRange,
+                    Operator = "InRange",
                 }
             };
 

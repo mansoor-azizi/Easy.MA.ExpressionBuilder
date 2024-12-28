@@ -28,7 +28,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Score",
                     FilterValue = "95",
-                    Operator = FilterCondition.Equals,
+                    Operator = "Equals",
                 }
             };
 
@@ -55,7 +55,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Score",
                     FilterValue = "95",
-                    Operator = FilterCondition.NotEquals,
+                    Operator ="NotEquals",
                 }
             };
 
@@ -82,7 +82,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Score",
                     FilterValue = "90",
-                    Operator = FilterCondition.LessThan,
+                    Operator = "LessThan",
                 }
             };
 
@@ -109,7 +109,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Score",
                     FilterValue = "90",
-                    Operator = FilterCondition.LessThanOrEqual,
+                    Operator = "LessThanOrEqual",
                 }
             };
 
@@ -136,7 +136,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Score",
                     FilterValue = "90",
-                    Operator = FilterCondition.GreaterThan,
+                    Operator = "GreaterThan",
                 }
             };
 
@@ -163,7 +163,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Score",
                     FilterValue = "85",
-                    Operator = FilterCondition.GreaterThanOrEqual,
+                    Operator = "GreaterThanOrEqual",
                 }
             };
 
@@ -191,7 +191,7 @@ namespace PredicateBuilderTests
                     PropertyName = "Car.Score",
                     FilterValue = "80",
                     FilterOtherValue = "90",
-                    Operator = FilterCondition.InRange,
+                    Operator = "InRange",
                 }
             };
 

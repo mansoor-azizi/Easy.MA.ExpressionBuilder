@@ -27,7 +27,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Color",
                     FilterValue = "Red",
-                    Operator = FilterCondition.Equals,
+                    Operator = "Equals",
                 }
             };
 
@@ -54,7 +54,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Color",
                     FilterValue = "Red",
-                    Operator = FilterCondition.NotEquals,
+                    Operator ="NotEquals",
                 }
             };
 
@@ -81,7 +81,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "Car.Color",
                     FilterValue = "Red,Blue",
-                    Operator = FilterCondition.InSet,
+                    Operator = "InSet",
                 }
             };
 

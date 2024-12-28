@@ -15,7 +15,7 @@ namespace Easy.MA.ExpressionBuilder
             {
                 var property = GetExpressionProperty(param, filterParam.PropertyName);
                 var expressionBuilder = ExpressionBuilderFactory.GetExpressionBuilder(property.Type);
-                var currentPredicate = expressionBuilder.CreateExpression(property, filterParam.Operator,
+                var currentPredicate = expressionBuilder.CreateExpression(property, filterParam._Operator,
                     filterParam.FilterValue, filterParam.FilterOtherValue);
                 if (mainExpression == null)
                 {

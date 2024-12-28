@@ -27,7 +27,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "Car.ModelName",
                     FilterValue = "HONDA",
-                    Operator = FilterCondition.Equals,
+                    Operator = "Equals",
                 }
             };
 
@@ -54,7 +54,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "Car.ModelName",
                     FilterValue = "HONDA",
-                    Operator = FilterCondition.NotEquals,
+                    Operator ="NotEquals",
                 }
             };
 
@@ -83,7 +83,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "Car.Description",
                     FilterValue = "HONDA",
-                    Operator = FilterCondition.Contains,
+                    Operator = "Contains",
                 }
             };
 
@@ -110,7 +110,7 @@ namespace expressionBuilderTests
                 {
                     PropertyName = "Car.ModelName",
                     FilterValue = "HONDA,TOYOTA",
-                    Operator = FilterCondition.InSet,
+                    Operator = "InSet",
                 }
             };
 

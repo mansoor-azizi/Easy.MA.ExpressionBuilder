@@ -14,6 +14,11 @@ namespace Easy.MA.ExpressionBuilder.Core
 
         public string FilterOtherValue { get; set; }
 
-        public FilterCondition Operator { get; set; } = FilterCondition.Equals;
+        internal FilterCondition _Operator 
+        { 
+            get => (FilterCondition) Enum.Parse(typeof(FilterCondition), Operator); 
+        }
+
+        public string Operator { get; set; } = "Equals";
     }
 }

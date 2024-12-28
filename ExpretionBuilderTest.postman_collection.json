@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "badedc1d-72d2-441a-b6e1-3135758ceb1d",
+		"name": "Expretion Builder Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Person Sample with AND",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filters\": [\r\n        {\r\n            \"PropertyName\": \"Car.ModelName\",\r\n            \"FilterValue\": \"HONDA\",\r\n            \"Operator\": \"Equals\"\r\n        },\r\n        {\r\n            \"PropertyName\": \"Name\",\r\n            \"FilterValue\": \"Michael\",\r\n            \"Operator\": \"Equals\"\r\n        }\r\n    ],\r\n    \"baseOperator\": \"AND\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:5000/Persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person Sample with OR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filters\": [\r\n        {\r\n            \"PropertyName\": \"Car.ModelName\",\r\n            \"FilterValue\": \"HONDA\",\r\n            \"Operator\": \"Equals\"\r\n        },\r\n        {\r\n            \"PropertyName\": \"Name\",\r\n            \"FilterValue\": \"Michael\",\r\n            \"Operator\": \"Equals\"\r\n        }\r\n    ],\r\n    \"baseOperator\": \"OR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:5000/Persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person Sample for date filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filters\": [\r\n        {\r\n            \"PropertyName\": \"Car.ModelName\",\r\n            \"FilterValue\": \"HONDA\",\r\n            \"Operator\": \"Equals\"\r\n        },\r\n        {\r\n            \"PropertyName\": \"dateOfBirth\",\r\n            \"FilterValue\": \"1985-05-01\",\r\n            \"Operator\": \"Equals\"\r\n        }\r\n    ],\r\n    \"baseOperator\": \"AND\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:5000/Persons"
+			},
+			"response": []
+		}
+	]
+}

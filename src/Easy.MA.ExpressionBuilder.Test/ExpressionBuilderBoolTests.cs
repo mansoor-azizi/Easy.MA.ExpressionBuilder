@@ -29,7 +29,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "IsActive",
                     FilterValue = "true",
-                    Operator = FilterCondition.Equals,
+                    Operator = "Equals",
                 }
             };
 
@@ -57,7 +57,7 @@ namespace PredicateBuilderTests
                 {
                     PropertyName = "IsActive",
                     FilterValue = "true",
-                    Operator = FilterCondition.NotEquals,
+                    Operator = "NotEquals",
                 }
             };
 

@@ -27,7 +27,7 @@ app.UseAuthorization();
 app.MapPost("/Persons", (FilterModel filterModel) =>
 {
     // get filter expression
-    var expression = new ExpressionBuilder<Person>().Create(filterModel.Filters, filterModel.BaseOperator);
+    var expression = new ExpressionBuilder<Person>().Create(filterModel.Filters, filterModel._BaseOperator);
 
     // create a custom list
     var personListQueryable = new DataGenerator();
