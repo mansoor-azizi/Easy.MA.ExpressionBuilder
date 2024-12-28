@@ -106,6 +106,13 @@ The following operators are supported for filtering:
 - `NotContains`
 - `InSet`
 
+## Base Operators
+
+The following base operators are supported and applied to all filters:
+
+- `AND`
+- `OR`
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit pull requests.
