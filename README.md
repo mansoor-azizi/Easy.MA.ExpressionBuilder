@@ -19,6 +19,13 @@ To install the Dynamic Expression Builder, follow these steps:
    ```bash
    git clone https://github.com/mansoor-azizi/Easy.MA.ExpressionBuilder.git
    ```
+2. Add the NuGet package:
+   ```bash
+    dotnet add package Easy.MA.ExpressionBuilder --version 1.0.0
+   ```
+
+  
+
 
 ## Usage
 
