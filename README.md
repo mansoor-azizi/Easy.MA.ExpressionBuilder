@@ -2,6 +2,7 @@
 # Dynamic Expression Builder
 
 .NET 8 Easy Expression Builder by Mansoor Azizi.
+
 A generic dynamic expression builder that works with any type of class.
 
 ## Features
@@ -111,7 +112,7 @@ Contributions are welcome! Please fork the repository and submit pull requests.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is free and open source.
 
 ## Contact
 
