@@ -17,7 +17,7 @@ To install the Dynamic Expression Builder, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dynamic-expression-builder.git
+   git clone https://github.com/mansoor-azizi/Easy.MA.ExpressionBuilder.git
    ```
 
 ## Usage
