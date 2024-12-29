@@ -8,15 +8,15 @@ using System.Text.Json;
 Console.WriteLine("This is a Predicate Bulider App by Mansoor Azizi");
 
 // create a custom list
-var personListQueryable = new DataGenerator();
+var personsGenerator = new DataGenerator();
 
 // create filter list
 var filters = new List<Filter>();
 filters.Add(new Filter()
 {
     PropertyName = "Car.ModelName",
-    FilterValue = "HONDA",
-    Operator = "Equals",
+    FilterValue = "HONDA,TOYOTA",
+    Operator = "InRange",
 
 });
 filters.Add(new Filter()
@@ -31,36 +31,30 @@ filters.Add(new Filter()
 var expressionWithAnd = new ExpressionBuilder<Person>().Create(filters,ExpressionBaseOperator.AND);
 
 // filter list
-var finalListWithAnd = personListQueryable.GeneratePersonsQueryable().Where(expressionWithAnd).ToList();
+var finalListWithAnd = personsGenerator.GeneratePersonsQueryable().Where(expressionWithAnd).ToList();
 
 Console.WriteLine("");
 Console.WriteLine("Final Filtered List With AND Operator");
-foreach (var person in finalListWithAnd) {
-    Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}");
-}
+finalListWithAnd.ForEach(person => Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}"));
+
 
 // get filter expression OR
 var expressionWithOR = new ExpressionBuilder<Person>().Create(filters, ExpressionBaseOperator.OR);
 
 // filter list
-var finalListWithOr = personListQueryable.GeneratePersonsQueryable().Where(expressionWithOR).ToList();
+var finalListWithOr = personsGenerator.GeneratePersonsQueryable().Where(expressionWithOR).ToList();
 Console.WriteLine("");
 Console.WriteLine("Final Filtered List With OR Operator");
-foreach (var person in finalListWithOr)
-{
-    Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}");
-}
+finalListWithOr.ForEach(person => Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}"));
 
-// to show how to use expression with list
+
+// to show how to use expression with list and compiled expression
 var compiledExpressionOr= expressionWithOR.Compile();
-var personList = personListQueryable.GeneratePersonsList();
-var folteredPersonList = personList.Where(compiledExpressionOr);
+
+var finalListWithCompiledQuery = personsGenerator.GeneratePersonsList().Where(compiledExpressionOr).ToList();
 Console.WriteLine("");
 Console.WriteLine("Final Compiled Expression With OR Operator On List");
-foreach (var person in finalListWithOr)
-{
-    Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}");
-}
+finalListWithCompiledQuery.ForEach(person => Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}"));
 
 Console.ReadKey();
 
