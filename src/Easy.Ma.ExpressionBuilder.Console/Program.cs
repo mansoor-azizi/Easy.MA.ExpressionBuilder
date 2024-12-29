@@ -3,7 +3,11 @@ using Easy.MA.ExpressionBuilder;
 using Easy.MA.ExpressionBuilder.Core;
 using Easy.MA.ExpressionBuilder.Models;
 
-Console.WriteLine("Easy Expression Bulider by Mansoor Azizi");
+Console.ForegroundColor = ConsoleColor.Red;
+Console.Write(" ♥ ");
+
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine(" Easy Expression Bulider by Mansoor Azizi ...");
 
 // create a custom list
 var personsGenerator = new DataGenerator();
@@ -13,7 +17,7 @@ var filters = new List<Filter>();
 filters.Add(new Filter()
 {
     PropertyName = "Car.ModelName",
-    FilterValue = "HONDA,TOYOTA",
+    FilterValue = "HONDA",
     Operator = "InRange",
 
 });
@@ -31,9 +35,12 @@ var expressionWithAnd = new ExpressionBuilder<Person>().Create(filters,Expressio
 // filter list
 var finalListWithAnd = personsGenerator.GeneratePersonsQueryable().Where(expressionWithAnd).ToList();
 
+Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("");
 Console.WriteLine("Final Filtered List With AND Operator");
-finalListWithAnd.ForEach(person => Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}"));
+
+Console.ForegroundColor = ConsoleColor.Gray;
+finalListWithAnd.ForEach(person => Console.WriteLine("{0,-25} {1}" ,person.Name + " "+ person.Family,person.Car.ModelName));
 
 
 // get filter expression OR
@@ -41,18 +48,26 @@ var expressionWithOR = new ExpressionBuilder<Person>().Create(filters, Expressio
 
 // filter list
 var finalListWithOr = personsGenerator.GeneratePersonsQueryable().Where(expressionWithOR).ToList();
+
+Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("");
 Console.WriteLine("Final Filtered List With OR Operator");
-finalListWithOr.ForEach(person => Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}"));
+
+Console.ForegroundColor = ConsoleColor.Gray;
+finalListWithOr.ForEach(person => Console.WriteLine("{0,-25} {1}", person.Name + " " + person.Family, person.Car.ModelName));
 
 
 // to show how to use expression with list and compiled expression
 var compiledExpressionOr= expressionWithOR.Compile();
 
 var finalListWithCompiledQuery = personsGenerator.GeneratePersonsList().Where(compiledExpressionOr).ToList();
+
+Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("");
 Console.WriteLine("Final Compiled Expression With OR Operator On List");
-finalListWithCompiledQuery.ForEach(person => Console.WriteLine($"{person.Name} {person.Family} - {person.Car.ModelName}"));
+
+Console.ForegroundColor = ConsoleColor.Gray;
+finalListWithCompiledQuery.ForEach(person => Console.WriteLine("{0,-25} {1}", person.Name + " " + person.Family, person.Car.ModelName));
 
 Console.ReadKey();
 
